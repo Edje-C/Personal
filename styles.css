@@ -1,6 +1,7 @@
 body {
 	margin: 0;
 	font-family: Arial, Helvetica, sans-serif;
+	padding: 0 50px;
 }
 
 h1, p, a {
@@ -11,7 +12,7 @@ h1, p, a {
 }
 
 .background {
-	
+
 }
 
 .cool-stuff:after {
@@ -25,6 +26,10 @@ h1, p, a {
 
 .content {
 	display: flex;
+}
+
+.email {
+	z-index: 1;
 }
 
 .footer {
@@ -44,12 +49,8 @@ h1, p, a {
 	border: 5px solid;
 }
 
-.github {
-	z-index: 1;
-}
-
 .header {
-	padding: 20vh 50px;
+	padding: 20vh 0;
 	text-align: center;
 }
 
@@ -77,24 +78,20 @@ h1, p, a {
 	font-size: 6em;
 }
 
-.panel {
-	width: 50px;
-	height: inherit;
-	background: white;
-	z-index: 10;
-}
-
 .title {
-	height: 100px;;
+	width: calc(100% - 200px);
+	height: 300px;
 	font-size: 300px;
 	display: flex;
 	align-items: center;
 	position: absolute;
+	overflow: hidden;
 	mix-blend-mode: difference;
-	transition: margin .4s;
+	transition: width .4s, margin .4s;
 }
 
 .title:hover {
+	width: calc(100% - 100px);
 	margin-left: -50px;
 }
 
