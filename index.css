@@ -1,7 +1,6 @@
 body, html {
 	width: 100%;
 	height: 100%;
-	overflow: auto;
 }
 
 body {
@@ -17,6 +16,14 @@ p, a {
 	padding: 0;
 	text-decoration: none;
 	color: inherit;
+}
+
+.container {
+	min-height: 100%;
+	display: flex;
+  flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .content, .footer {
@@ -54,6 +61,7 @@ p, a {
 	color: white;
 	padding: 100px 0 100px 50px;
 	box-sizing: border-box;
+	overflow: auto;
 }
 
 .email {
@@ -69,6 +77,8 @@ p, a {
 }
 
 .footer {
+	width: 100%;
+	height: 200px;
 	display: flex;
 	justify-content: center;
 }
