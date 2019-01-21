@@ -1,0 +1,131 @@
+body, html {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 30px 0;
+	background: black;
+	background: blue url('https://media.giphy.com/media/WJ7hMILRz2VIQ/giphy.gif') center/cover;
+}
+
+p, a {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	color: inherit;
+}
+
+.content, .footer {
+	max-width: 2000px;
+	margin: auto;
+}
+
+.jams-container {
+	width: 150px;
+	height: 100px;
+	background: white url('https://media.giphy.com/media/WJ7hMILRz2VIQ/giphy.gif') center/cover;
+	padding: 20px 0;
+	text-align: center;
+	font-size: 2em;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: -40px 0 10vh;
+	color: yellow;
+	border: 5px solid white;
+}
+
+.jams:after {
+	width: 50px;
+	display: block;
+	content: '';
+	border-bottom: 1px solid blue; 
+	text-align: center;
+	margin: auto;
+}
+
+.content {
+	width: 100%;
+	color: white;
+	padding: 100px 0 100px 50px;
+	box-sizing: border-box;
+}
+
+.email {
+	z-index: 1;
+}
+
+.film {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: rgba(0, 0, 0, .5);
+	pointer-events: none;
+}
+
+.footer {
+	display: flex;
+	justify-content: center;
+}
+
+.icon {
+	background: yellow;
+}
+
+.link {
+	height: 200px;
+	display: flex;
+	align-items: center;
+}
+
+.linkedin {
+	z-index: 2;
+}
+
+.name {
+	position: absolute;
+	margin-top: 150px;
+	color: yellow;
+	z-index: 200;
+	text-align: center;
+}
+
+.title {
+	width: calc(100% - 50px);
+	height: 350px;
+	font-size: 400px;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	overflow: hidden;
+	mix-blend-mode: difference;
+	transition: width .4s, margin .4s;
+}
+
+.title:hover {
+	width: 100%;
+	margin-left: -50px;
+}
+
+/* fonts */
+
+.fugaz-one {
+	font-family: 'Fugaz One', cursive;
+}
+
+.chelsea-market {
+	font-family: 'Chelsea Market', cursive;
+}
+
+.im-fell-dv-pica {
+	font-family: 'IM Fell DW Pica SC', cursive;
+}
+
+.unifraktur-maguntia {
+	font-family: 'UnifrakturMaguntia', cursive;
+}
