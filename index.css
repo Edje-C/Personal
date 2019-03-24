@@ -127,7 +127,7 @@ p, a {
 	justify-content: space-evenly;
 	position: relative;
 	box-sizing: border-box;
-	word-break: break-all;
+	word-break: break-word;
 	z-index: -1;
 }
 
