@@ -1,243 +1,218 @@
-body, html {
-	width: 100%;
-	height: 100%;
+html, body {
+	background: blue;
+	overflow-x: hidden;
+	min-height: 100vh;
 }
 
 body {
+  padding: 0;
 	margin: 0;
-	font-family: Arial, Helvetica, sans-serif;
-	padding: 30px 0;
-	background: black;
+	color: deepskyblue;
+	font-family: sans-serif;
+	font-size: 100px;
+	cursor: not-allowed;
 }
 
-p, a {
-	margin: 0;
-	padding: 0;
-	text-decoration: none;
+ul {
+	list-style: none;
+}
+
+a {
+	font-size: inherit;
 	color: inherit;
+	text-decoration: none;
 }
 
-.pixel-background {
-	background: blue url('https://media.giphy.com/media/WJ7hMILRz2VIQ/giphy.gif') center/cover;
+p {
+	margin: 10px 0px;
+	width: 100vw;
 }
 
-.container {
-	min-height: 100%;
-	display: flex;
-  flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-.lights {
-	width: 130px;
-	font-size: 30px;
-	background: blue;
-	border: none;
-	padding: 5px 8px;
-	outline: none;
-	color: yellow;
-	box-sizing: border-box;
-	cursor: pointer;
-}
-
-.lights-container {
-	width: 150px;
-	height: 100px;
-	background: white url('https://media.giphy.com/media/WJ7hMILRz2VIQ/giphy.gif') center/cover;
-	padding: 20px 0;
-	text-align: center;
-	font-size: 2em;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: yellow;
-	border: 5px solid white;
-}
-
-.jams:after {
-	width: 50px;
-	display: block;
-	content: '';
-	border-bottom: 1px solid blue; 
-	text-align: center;
-	margin: auto;
+.color-greenyellow {
+	color: greenyellow;
+	opacity: .9;
 }
 
 .content {
-	width: 100%;
-	color: white;
-	margin: auto;
-	padding: 100px 0 100px 50px;
-	box-sizing: border-box;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
 	overflow: auto;
 }
 
-.email {
-	z-index: 1;
+.about {
 }
 
-.film {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	background: rgba(0, 0, 0, .5);
-	pointer-events: none;
-}
-
-.icon {
-	background: yellow;
-}
-
-.link {
-	height: 200px;
-	display: flex;
-	align-items: center;
-}
-
-.linkedin {
-	z-index: 2;
-}
-
-.title {
-	width: calc(100% - 50px);
-	height: 350px;
-	font-size: 400px;
-	display: flex;
-	align-items: center;
-	position: absolute;
-	overflow: hidden;
-	mix-blend-mode: difference;
-	transition: width .4s, margin .4s;
-}
-
-.title:hover {
-	width: 100%;
-	margin-left: -50px;
-}
-
-.resume {
-	width: 100%;
-	min-height: 100vh;
-	color: white;
-	background: black;
-	padding: 100px 0;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	position: relative;
-	box-sizing: border-box;
-	word-break: break-word;
-	z-index: -1;
-}
-
-.job {
-	width: 100%;
-	display: flex;
-	align-items: center;
-	margin: 25px 0; 
-}
-
-.time {
-	width: 25%;
-	font-size: 25px;
-	padding: 0 10px;
-	box-sizing: border-box;
-	text-align: right;
-}
-
-.job-info {
-	width: 40%;
-	color: black;
-	padding-left: 10px;
-}
-
-.company {
-	font-size: 50px;
-	font-family: serif;
-}
-
-.stack {
-	width: 50%;    
-	max-width: 1000px;
-	color: blue;
-	margin: 20px auto;
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-}
-
-.language {
-	width: 50%;
-	text-align: center;
-	padding-bottom: 10px;
-	font-family: 'Courier New', Courier, monospace;
-}
-
-.protrusion {
-	width: 50%;
-	height: 100%;
-	background: yellow;
+.name {
+	font-size: 4vw;
 	position: fixed;
-	left: 25%;
-	top: 0;
-	z-index: -1;
+	color: greenyellow;
+	z-index: 1;
+	mix-blend-mode: darken;
+}
+
+.occupation {
+	font-size: 6vw;
+	text-align: end;
+}
+
+.occupation::after {
+	width: 20vw;
+	height: 15px;
+	background: darkblue;
+	margin: auto 20vw auto auto;
+	display: block;
+	content: "";
+}
+
+.music {
+	font-size: 11.7vw;
+}
+
+.sleep {
+	color: white;
+	font-size: 7vw;
+	border-left: 10px solid greenyellow;
+	border-right: 10px solid greenyellow;
+	box-sizing: border-box;
+}
+
+.programming {
+	height: 0px;
+	font-size: 5vw;
+	mix-blend-mode: hard-light;
+	margin-top: -25px;
+}
+
+.food {
+	font-size: 15vw;
+	transform: rotate(11deg);
+	mix-blend-mode: hard-light;
+}
+
+.poem {
+	font-size: 2.7vw;
+	display: flex;
+	align-items: center;
+}
+
+.poem > a {
+	font-size: 3.5vw;
+	background-color: greenyellow;
+	margin-left: 15px;
+}
+
+.p-type {
+	color: darkblue;
+	font-size: 10vw;
+	position: absolute;
+}
+
+.people {
+	font-size: 12vw;
+	transform: skewX(60deg);
+	transform-origin: top;
+}
+
+.lifegruard {
+	width: 100vw;
+	font-size: 3vw;
+	text-align: center;
+	opacity: .5;
+}
+
+.all-the-time {
+	font-size: 8vw;
+	color: white;
+	text-align: end;
+}
+
+.genre {
+	font-size: 6vw;
+	text-align: center;
+}
+
+.vine {
+	font-size: 3.4vw;
+	position: relative;
+}
+
+.youtube {
+	color: darkblue;
+	font-size: 9vw;
+	position: absolute;
+	mix-blend-mode: difference;
+}
+
+.vine > a {
+	text-decoration: underline;
+	text-decoration-color: greenyellow;
+}
+
+.skate {
+	font-size: 1.7vw;
+	color: white;
+	transform: scaleX(2.5);
+	transform-origin: left;
+}
+
+.song {
+	font-size: 2vw;
+	margin: 35px 0px;
+	text-align: center;
+	color: white;
+}
+
+.song > a {
+	color: greenyellow;
+}
+
+.ssn {
+	font-size: 8vw;
+	position: absolute;
+	mix-blend-mode: hard-light;
+}
+
+.anime {
+	font-size: 8vw;
+	transform: rotate(180deg);
+	color: white;
+}
+
+.house {
+	font-size: 2vw;
+	text-shadow: 2px 2px 10px greenyellow;
+}
+
+.climbing {
+	font-size: 9vw;
 }
 
 .footer {
-	width: 100%;
-	height: 100px;
+	font-size: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.styles {
+	font-size: 30px;
+	padding: 0px 5px;
+}
+
+.triangle:hover {
+	color: white;
+}
+
+.links {
+	width: fit-content;
+	background: rgba(0, 255, 255, .6);
+	color: greenyellow;
+	font-size: 20px;
+	margin-left: auto;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	border: 10px solid white;
-	padding: 10px 0;
-	box-sizing: border-box;
-	position: absolute;
-	color: black;
-	bottom: 0;
-}
-
-.page-links {
-	margin-bottom: 10px;
-}
-
-.page-link:after {
-	content: '';
-	width: 15px;
-	height: 2px;
-	background: blue;
-	display: block;
-	margin: auto;
-}
-
-
-/* fonts */
-
-.fugaz-one {
-	font-family: 'Fugaz One', cursive;
-}
-
-.chelsea-market {
-	font-family: 'Chelsea Market', cursive;
-}
-
-.im-fell-dv-pica {
-	font-family: 'IM Fell DW Pica SC', cursive;
-}
-
-.unifraktur-maguntia {
-	font-family: 'UnifrakturMaguntia', cursive;
-}
-
-@media (max-width: 720px) {
-	.stack {
-		margin-left: 32.5%;
-	}
-
-	.protrusion {
-		width: 75%;
-		position: absolute;
-	}
+	align-items: flex-end;
 }
