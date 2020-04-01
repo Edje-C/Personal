@@ -1,0 +1,5 @@
+console.log("%cIt's gonna take a bit more work than that!", "background: blue; color: white; font-size: 28px;")
+console.log("%c(・｀‿´・)", "background: blue; color: deepskyblue; font-size: 50px;")
+console.log("%cFind the tag with the class '%cssn'", "background: blue; color: white; font-size: 18px;", "background: blue; color: greenyellow; font-size: 18px;")
+console.log("%cWhat you're looking for can be found there...", "background: blue; color: darkblue; font-size: 14px;")
+console.log("%cElon Jefferson", "background: blue; color: deepskyblue; font-size: 100px;")
