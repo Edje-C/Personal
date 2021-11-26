@@ -148,7 +148,7 @@ p {
 	position: relative;
 }
 
-.youtube {
+.newark {
 	color: darkblue;
 	font-size: 9vw;
 	position: absolute;
@@ -185,7 +185,7 @@ p {
 }
 
 .anime {
-	font-size: 8vw;
+	font-size: 7vw;
 	transform: rotate(180deg);
 	color: white;
 }
